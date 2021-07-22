@@ -12,9 +12,7 @@ bastille <- list(
 
 # what tower has the less? how many does it have? how many soldiers at all?
 print(bastille)
-bastille_counted = sapply(bastille, function(tower){
-  sum(tower)
-})
+bastille_counted = sapply(bastille, function(tower){sum(tower)})
 
 print(sort(bastille_counted))
 
