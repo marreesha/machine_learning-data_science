@@ -6,8 +6,7 @@ build_ziggurat <- function(n) {
   }
 }
 
-
-#print(build_ziggurat(4))
+print(build_ziggurat(4))
 
 #[,1] [,2] [,3] [,4] [,5] [,6] [,7]
 #[1,]    1    1    1    1    1    1    1
