@@ -26,7 +26,7 @@ ggplot(df, aes(x = mpg, fill = am))+
   ggtitle("MPG dotplot")
 
 ggplot(df, aes(x = mpg, fill = am))+
-  geom_density(alpha = 0.5)+
+  geom_density(alpha = 0.4)+
   xlab("Miles/(US) gallon")+
   ylab("Count")+
   scale_fill_discrete(name="Transmission type")+
