@@ -4,9 +4,10 @@ build_ziggurat <- function(n) {
   for(i in 1:(n-1)) {
     m[(1 + i):(size - i), (1 + i):(size - i)] <- i+1
   }
+m  
 }
 
-print(build_ziggurat(4))
+build_ziggurat(4)
 
 #[,1] [,2] [,3] [,4] [,5] [,6] [,7]
 #[1,]    1    1    1    1    1    1    1
