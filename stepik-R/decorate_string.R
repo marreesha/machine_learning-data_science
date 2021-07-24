@@ -1,6 +1,6 @@
-decorate_string <- function(pattern, ...) { 
-  strReverse <- function(x) sapply(lapply(strsplit(x, NULL), rev), paste, collapse="")
-  paste0(pattern, paste(...), strReverse(pattern))
+decorate_string <- function(pattern = "", ..., sep = " ") {
+  revpattern <- paste0(strsplit(pattern, split = "")[[1]][nchar(pattern):1], collapse = "")
+  paste(pattern, paste(..., sep = sep), revpattern, sep = "")
 }
 
 # "123abc321"
